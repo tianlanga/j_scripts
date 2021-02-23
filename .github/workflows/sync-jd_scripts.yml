@@ -3,12 +3,12 @@ name: sync-jd_scripts
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/20 0-16 * * *'
+    - cron: '*/30 0-16 * * *'
 
 jobs:
   build:
     runs-on: ubuntu-18.04
-    if: ${{ github.event.repository.owner.id == github.event.sender.id && github.repository == 'RikudouPatrickstar/jd_scripts' }}
+    if: ${{ github.event.repository.owner.id == github.event.sender.id && github.repository == 'tianlanga/j_scripts' }}
 
     steps:
     - name: Init Build Dependencies
