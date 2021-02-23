@@ -51,16 +51,9 @@ jobs:
     #     branch: main
 
     - name: Delete workflow runs
-      uses: tianlanga/delete-workflow-runs@main
+      uses: Mattraks/delete-workflow-runs@main
       with:
         token: ${{ github.token }}
         retain_days: 1
         keep_minimum_runs: 3
-        
-    - name: Delete workflow runs2
-      uses: tianlanga/delete-workflow-runs@master
-      with:
-        token: ${{ github.token }}
-        retain_days: 1
-        keep_minimum_runs: 1
-
+ 
